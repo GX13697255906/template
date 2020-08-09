@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.gx</groupId>
-    <artifactId>server</artifactId>
+    <artifactId>netty</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>server</name>
+    <name>client</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -154,6 +154,13 @@
         <!--</dependency>-->
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.36.Final</version>
+        </dependency>
+
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -167,24 +174,11 @@
             <version>4.1.19</version>
         </dependency>
         <!-- eayspoi工具类 -->
-        <!--<dependency>-->
-            <!--<groupId>cn.afterturn</groupId>-->
-            <!--<artifactId>easypoi-spring-boot-starter</artifactId>-->
-            <!--<version>3.3.0</version>-->
-        <!--</dependency>-->
-
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
+            <groupId>cn.afterturn</groupId>
+            <artifactId>easypoi-spring-boot-starter</artifactId>
+            <version>3.3.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.9.2</version>
-        </dependency>
-
     </dependencies>
 
     <build>
