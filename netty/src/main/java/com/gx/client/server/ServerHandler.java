@@ -2,7 +2,6 @@ package com.gx.client.server;
 
 import cn.hutool.core.date.DateUtil;
 import com.gx.client.Constants;
-import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import lombok.extern.slf4j.Slf4j;
@@ -33,6 +32,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+        log.error("----------------连接异常----------------");
         log.error(cause.getMessage());
     }
 }
