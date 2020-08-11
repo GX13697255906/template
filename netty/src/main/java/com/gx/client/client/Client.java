@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * netty 客户端
+ * @author guoxun
  */
 @Slf4j
 public class Client {
@@ -59,7 +60,7 @@ public class Client {
         b.group(group)
                 .channel(NioSocketChannel.class)
                 .option(ChannelOption.TCP_NODELAY, true)
-                .handler(new ClientChildChannelHandler());
+                .handler(new ClientInitChannelHandler());
         log.info("创建连接 Time:{}", DateUtil.format(new Date(), Constants.DATE_FORMAT));
         connent();
     }

@@ -14,10 +14,10 @@ import java.util.Date;
 
 /**
  * netty 服务端
+ * @author guoxun
  */
 @Slf4j
 public class Server {
-
 
     public void bind(int port) {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
@@ -29,7 +29,7 @@ public class Server {
                     //设置要被实例化的为 NioServerSocketChannel 类
                     .channel(NioServerSocketChannel.class)
                     .option(ChannelOption.SO_BACKLOG, 1024)
-                    .childHandler(new ChildChannelHandler());
+                    .childHandler(new ServerInitChannelHandler());
 //        绑定端口，同步等待成功
             ChannelFuture future = b.bind(port).sync();
             future.channel().closeFuture().sync();
