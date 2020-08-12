@@ -20,7 +20,7 @@ public class ClientInitChannelHandler extends ChannelInitializer<SocketChannel> 
 
         channel.pipeline().addLast("objectDecoder", new ObjectDecoder(ClassResolvers.weakCachingResolver(this.getClass().getClassLoader())));
         channel.pipeline().addLast("objectEncoder", new ObjectEncoder());
-        channel.pipeline().addLast("idleStateHandler", new IdleStateHandler(20, 10, 0, TimeUnit.SECONDS));
+        channel.pipeline().addLast("idleStateHandler", new IdleStateHandler(30, 20, 0, TimeUnit.SECONDS));
         channel.pipeline().addLast(Constants.ClientIdle, new ClientSenderIdleStateTrigger());
         channel.pipeline().addLast("clientHandler", new ClientHandler());
     }

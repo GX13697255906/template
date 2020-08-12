@@ -24,7 +24,7 @@ public class ClientSenderIdleStateTrigger extends ChannelInboundHandlerAdapter {
         if (evt instanceof IdleStateEvent) {
             IdleState state = ((IdleStateEvent) evt).state();
             if (state == IdleState.WRITER_IDLE) {
-                log.info("client 10秒内没有发送数据到 server 发送心跳 ping -> server");
+                log.info("client 20秒内没有发送数据到 server 发送心跳 ping -> server");
                 Message message = new Message();
                 message.setType(1);
                 message.setPing(Constants.ping);
@@ -40,23 +40,23 @@ public class ClientSenderIdleStateTrigger extends ChannelInboundHandlerAdapter {
         }
     }
 
-    @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        Message message = (Message) msg;
-        if (ObjectUtils.isNotEmpty(message)) {
-            if (message.getType() == 2) {
-                log.info("client 接收到 server 回复的 pong 信息");
-            }
-            if (message.getType() == 1) {
-                log.info("client 接收到 server 发送的 ping 信息 回复心跳 pong -> server ");
-                message.setPing(null);
-                message.setType(2);
-                message.setPong(Constants.pong);
-                ctx.writeAndFlush(message);
-            }
-        }
-
-    }
+//    @Override
+//    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+//        Message message = (Message) msg;
+//        if (ObjectUtils.isNotEmpty(message)) {
+//            if (message.getType() == 2) {
+//                log.info("client 接收到 server 回复的 pong 信息");
+//            }
+//            if (message.getType() == 1) {
+//                log.info("client 接收到 server 发送的 ping 信息 回复心跳 pong -> server ");
+//                message.setPing(null);
+//                message.setType(2);
+//                message.setPong(Constants.pong);
+//                ctx.writeAndFlush(message);
+//            }
+//        }
+//
+//    }
 
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {

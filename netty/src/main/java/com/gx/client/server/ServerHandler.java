@@ -1,6 +1,7 @@
 package com.gx.client.server;
 
 import cn.hutool.core.date.DateUtil;
+import com.baomidou.mybatisplus.core.toolkit.ObjectUtils;
 import com.gx.client.common.Message;
 import com.gx.client.common.User;
 import com.gx.client.constants.Constants;
@@ -29,13 +30,24 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-//        log.info("--------------服务端-读取信息--------------");
         Message message = (Message) msg;
-        if(message.getType() == 3){
-            List<User> list = (List<User>) message.getData();
-            System.out.println(list.get(0).getUsername());
+        if (ObjectUtils.isNotEmpty(message)) {
+            if (message.getType() == 1) {
+                log.info("server 接收到 client 发送的 ping 信息 回复心跳 pong ->client");
+                message.setPing(null);
+                message.setType(2);
+                message.setPong(Constants.pong);
+                ctx.writeAndFlush(message);
+            }
+            if (message.getType() == 2) {
+                log.info("server 接收到 client 回复的 pong 信息");
+            }
+            if(message.getType() == 3){
+                log.info("======================= 接收到clint推送的信息 =====================");
+                List<User> list = (List<User>) message.getData();
+                System.out.println(list.get(0).getUsername());
+            }
         }
-//        System.out.println("server ping = " + message.getMsg());
     }
 
     @Override
