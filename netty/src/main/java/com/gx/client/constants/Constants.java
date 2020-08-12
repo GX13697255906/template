@@ -1,4 +1,4 @@
-package com.gx.client;
+package com.gx.client.constants;
 
 public class Constants {
 

@@ -1,7 +1,7 @@
 package com.gx.client.server;
 
 import cn.hutool.core.date.DateUtil;
-import com.gx.client.Constants;
+import com.gx.client.constants.Constants;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
@@ -9,14 +9,17 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
 /**
  * netty 服务端
+ *
  * @author guoxun
  */
 @Slf4j
+@Service
 public class Server {
 
     public void bind(int port) {
@@ -46,11 +49,5 @@ public class Server {
         Integer port = 8080;
         Server server = new Server();
         server.bind(port);
-
-
-
-
     }
-
-
 }

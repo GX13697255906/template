@@ -1,18 +1,14 @@
 package com.gx.client.client;
 
 import com.baomidou.mybatisplus.core.toolkit.ObjectUtils;
-import com.gx.client.Constants;
+import com.gx.client.constants.Constants;
 import com.gx.client.common.Message;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
-import io.netty.util.CharsetUtil;
 import lombok.extern.slf4j.Slf4j;
-
-import java.nio.charset.Charset;
 
 
 /**
@@ -36,7 +32,8 @@ public class ClientSenderIdleStateTrigger extends ChannelInboundHandlerAdapter {
                 ctx.writeAndFlush(message);
             }
             if (state == IdleState.READER_IDLE) {
-                log.error("----------------------- client 与 server 的连接断开 client 需要重新尝试连接-----------------------");
+                log.error("-----------error------------ client 与 server 的连接断开 client 需要重新尝试连接 -----------error------------");
+                new Client().connent();
             }
         } else {
             super.userEventTriggered(ctx, evt);

@@ -1,7 +1,8 @@
 package com.gx.client.client;
 
 import cn.hutool.core.date.DateUtil;
-import com.gx.client.Constants;
+import com.gx.client.constants.Constants;
+import com.gx.client.common.Message;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
@@ -10,15 +11,20 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
  * netty 客户端
+ *
  * @author guoxun
  */
 @Slf4j
+@Service
 public class Client {
 
     public Client() {
@@ -54,6 +60,7 @@ public class Client {
         });
     }
 
+    @PostConstruct
     public void init() {
         group = new NioEventLoopGroup();
         b = new Bootstrap();
@@ -65,10 +72,13 @@ public class Client {
         connent();
     }
 
-    public static void main(String[] args) {
-        Client client = new Client();
-        client.connent();
+    public void pushData(Message message) {
+        message.setType(3);
+        if(!channel.isActive()){
+            ChannelFuture future = b.connect(Constants.host, Constants.port);
+            channel = future.channel();
+        }
+        channel.writeAndFlush(message);
     }
-
 
 }

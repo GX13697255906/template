@@ -1,7 +1,7 @@
 package com.gx.client.client;
 
 import cn.hutool.core.date.DateUtil;
-import com.gx.client.Constants;
+import com.gx.client.constants.Constants;
 import com.gx.client.common.Message;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

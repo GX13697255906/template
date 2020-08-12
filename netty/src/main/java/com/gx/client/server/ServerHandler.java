@@ -1,13 +1,15 @@
 package com.gx.client.server;
 
 import cn.hutool.core.date.DateUtil;
-import com.gx.client.Constants;
 import com.gx.client.common.Message;
+import com.gx.client.common.User;
+import com.gx.client.constants.Constants;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * 消息处理
@@ -28,7 +30,11 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
 //        log.info("--------------服务端-读取信息--------------");
-//        Message message = (Message) msg;
+        Message message = (Message) msg;
+        if(message.getType() == 3){
+            List<User> list = (List<User>) message.getData();
+            System.out.println(list.get(0).getUsername());
+        }
 //        System.out.println("server ping = " + message.getMsg());
     }
 

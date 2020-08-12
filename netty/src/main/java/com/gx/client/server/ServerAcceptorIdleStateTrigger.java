@@ -1,15 +1,17 @@
 package com.gx.client.server;
 
 import com.baomidou.mybatisplus.core.toolkit.ObjectUtils;
-import com.gx.client.Constants;
+import com.gx.client.common.User;
+import com.gx.client.constants.Constants;
 import com.gx.client.common.Message;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.channel.ChannelPromise;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.List;
 
 /**
  * 服务端添加心跳
@@ -53,6 +55,11 @@ public class ServerAcceptorIdleStateTrigger extends ChannelInboundHandlerAdapter
             }
             if (message.getType() == 2) {
                 log.info("server 接收到 client 回复的 pong 信息");
+            }
+            if(message.getType() == 3){
+                log.info("======================= 接收到clint推送的信息 =====================");
+                List<User> list = (List<User>) message.getData();
+                System.out.println(list.get(0).getUsername());
             }
         }
     }

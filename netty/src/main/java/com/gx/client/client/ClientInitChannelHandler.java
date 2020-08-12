@@ -1,6 +1,6 @@
 package com.gx.client.client;
 
-import com.gx.client.Constants;
+import com.gx.client.constants.Constants;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.serialization.ClassResolvers;
