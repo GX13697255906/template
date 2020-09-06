@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c90b811-44cb-4732-aa30-84c025f06bdf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/gx/common/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/gx/common/InterfaceAndAbstract/Abstract/AbstractDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/gx/common/InterfaceAndAbstract/Abstract/AbstractImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/gx/common/InterfaceAndAbstract/Abstract/AbstractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/gx/common/InterfaceAndAbstract/Interface/InterfaceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/gx/common/InterfaceAndAbstract/Interface/InterfaceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/gx/common/InterfaceAndAbstract/Interface/InterfaceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty/src/main/java/com/gx/client/common/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty/src/main/java/com/gx/client/server/Server2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ratelimiter/src/main/java/com/gx/ratelimiter/ratelimiter/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/SpringSecurityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz301/client/constants/Biz301Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz301/client/model/bo/RegisterBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz301/client/model/entity/EnterpriseRegisterInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz301/client/model/entity/PowerPlantRegisterInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz301/client/model/entity/UnitParamRegisterInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz302/client/constants/Biz302Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz302/client/model/entity/CatalogTariffInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz302/client/model/entity/GovernmentApprovalFit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz302/client/model/entity/UnitDeemedCost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz303/client/constants/Biz303Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz303/client/model/entity/PowerPlantTradingRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz305/client/constants/Biz305Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz305/client/model/entity/CleanEnergyElectricPlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz305/client/model/entity/CleanEnergyPowerLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz306/client/constants/Biz306Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz306/client/model/entity/FmQuoteInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz306/client/model/entity/UnitEnergyQuoteInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz306/client/model/entity/UnitQuoteInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz306/client/model/entity/UserQuoteInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/constants/Biz308Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/ApowerOutputActaul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/BoundaryDataCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/BusLoadForecastiong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/BusLoadForecastiongDayAhead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/ContactLinePlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/MaintenanceTimePlantActual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/PowerOutputActualLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/PowerPackOf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/QuuipmentMaintenancePlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/StableChannelLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/SystemLoadForecasting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/SystemLoadForecastingDayAhead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/UnitHighLowLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz308/client/model/entity/UnitOnOff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/constants/Biz309Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/bo/BoundaryDataAdjustBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/bo/BoundaryDisclosureTimeInfoBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/bo/ClearingResultsPublishedInfoBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/bo/MarketInterfereBoundaryAjustBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/bo/MarketProcessStatusBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/entity/BoundaryDataAdjust.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/entity/BoundaryDisclosureTimeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/entity/ClearingResultsPublishedInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/entity/MarketDataInterfere.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/entity/MarketGlobalParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/entity/MarketProcessStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz309/client/model/entity/SpecialEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz311/client/constants/Biz311Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz311/client/model/entity/PowerClearDayInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz311/client/model/entity/PowerClearMonthInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz311/client/model/entity/SaleCompanyClearDayInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz311/client/model/entity/SaleCompanyClearMonthInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz311/client/model/entity/UserClearDayInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz311/client/model/entity/UserClearMonthInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz312/client/constants/Biz312Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz312/client/model/entity/ClearExceptionHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz312/client/model/entity/EarlierReportRemark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz312/client/model/entity/ElecSendReceivePlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz312/client/model/entity/NewUnitStartStop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz312/client/model/entity/SystemRunExceptionHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz312/client/model/entity/SystemRunOtherInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/biz312/client/model/entity/UnitOutputAdjust.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/common/mybatis/base/entity/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/constants/Biz3xConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/EntityMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/EnumConvertInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/FmQuoteInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/SuperMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/UnitEnergyQuoteInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/UnitQuoteInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/UserQuoteInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/service/IBaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/service/UnitEnergyQuoteInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/service/UnitQuoteInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/service/UserQuoteInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/service/impl/BaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/service/impl/UnitEnergyQuoteInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/service/impl/UnitQuoteInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dms/cloud/service/impl/UserQuoteInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ApowerOutputActaulMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/BoundaryDataAdjustMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/BoundaryDataCheckMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/BoundaryDisclosureTimeInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/BusLoadForecastiongDayAheadMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/BusLoadForecastiongMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CatalogTariffInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CleanEnergyElectricPlanMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CleanEnergyPowerLimitMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ClearExceptionHandleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ClearingResultsPublishedInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ContactLinePlanMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/EarlierReportRemarkMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ElecSendReceivePlanMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/EnterpriseRegisterInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/FmQuoteInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/GovernmentApprovalFitMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MaintenanceTimePlantActualMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MarketDataInterfereMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MarketGlobalParameterMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MarketProcessStatusMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/NewUnitStartStopMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/PowerClearDayInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/PowerClearMonthInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/PowerPackOfMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/PowerPlantRegisterInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/PowerPlantTradingRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/QuuipmentMaintenancePlanMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SaleCompanyClearDayInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SaleCompanyClearMonthInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SpecialEventMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/StableChannelLimitMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SystemLoadForecastingDayAheadMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SystemLoadForecastingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SystemRunExceptionHandleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SystemRunOtherInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UnitDeemedCostMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UnitEnergyQuoteInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UnitHighLowLimitMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UnitOnOffMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UnitOutputAdjustMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UnitParamRegisterInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UnitQuoteInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserClearDayInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserClearMonthInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserQuoteInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/gx/server/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/gx/server/TestDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netty/src/main/java/com/gx/client/client/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../netty/src/main/java/com/gx/client/client/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/test/java/com/gx/server/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/test/java/com/gx/server/TestDemo.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dms/SpringSecurityApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#477#478#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dms/cloud/service/impl/UnitEnergyQuoteInfoServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/UnitEnergyQuoteInfoMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/SuperMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/EntityMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="196" column="39" selection-start-line="196" selection-start-column="39" selection-end-line="196" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ApowerOutputActaulMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>EntityMap</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven" />
+        <option name="userSettingsFile" value="D:\apache-maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="springsecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springsecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springsecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springsecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springsecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springsecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dms" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springsecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dms" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springsecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dms" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springsecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springsecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597972124519" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\github\workspace\template\springsecurity\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springsecurity" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dms.SpringSecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c90b811-44cb-4732-aa30-84c025f06bdf" name="Default Changelist" comment="" />
+      <created>1597920869065</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597920869065</updated>
+      <workItem from="1597920870502" duration="1461000" />
+      <workItem from="1597976985904" duration="417000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1878000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45444685" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="11" />
+      <window_info anchor="bottom" id="MyBatis Log" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Messages" order="16" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="CDI" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="RestServices" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dms/SpringSecurityApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#477#478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dms/cloud/service/impl/UnitEnergyQuoteInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/UnitEnergyQuoteInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/SuperMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ApowerOutputActaulMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dms/cloud/mapper/EntityMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="196" column="39" selection-start-line="196" selection-start-column="39" selection-end-line="196" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

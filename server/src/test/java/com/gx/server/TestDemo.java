@@ -1,24 +1,17 @@
 package com.gx.server;
 
-import cn.hutool.core.date.DateUtil;
-import cn.hutool.core.util.NumberUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.gx.server.entity.UnitEnergyQuoteInfo;
 import com.gx.server.service.UnitEnergyQuoteInfoService;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.lang.reflect.Field;
-import java.util.Date;
 import java.util.List;
-import java.util.Map;
 import java.util.function.ToDoubleFunction;
 import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

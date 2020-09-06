@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dms.cloud.biz308.server.mapper.PowerPackOfMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dms.cloud.biz308.client.model.entity.PowerPackOf">
+        <id column="id" property="id" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="area_code" property="areaCode" />
+        <result column="area_name" property="areaName" />
+        <result column="type" property="type" />
+        <result column="power_type" property="powerType" />
+        <result column="p0000" property="p0000" />
+        <result column="p0015" property="p0015" />
+        <result column="p0030" property="p0030" />
+        <result column="p0045" property="p0045" />
+        <result column="p0100" property="p0100" />
+        <result column="p0115" property="p0115" />
+        <result column="p0130" property="p0130" />
+        <result column="p0145" property="p0145" />
+        <result column="p0200" property="p0200" />
+        <result column="p0215" property="p0215" />
+        <result column="p0230" property="p0230" />
+        <result column="p0245" property="p0245" />
+        <result column="p0300" property="p0300" />
+        <result column="p0315" property="p0315" />
+        <result column="p0330" property="p0330" />
+        <result column="p0345" property="p0345" />
+        <result column="p0400" property="p0400" />
+        <result column="p0415" property="p0415" />
+        <result column="p0430" property="p0430" />
+        <result column="p0445" property="p0445" />
+        <result column="p0500" property="p0500" />
+        <result column="p0515" property="p0515" />
+        <result column="p0530" property="p0530" />
+        <result column="p0545" property="p0545" />
+        <result column="p0600" property="p0600" />
+        <result column="p0615" property="p0615" />
+        <result column="p0630" property="p0630" />
+        <result column="p0645" property="p0645" />
+        <result column="p0700" property="p0700" />
+        <result column="p0715" property="p0715" />
+        <result column="p0730" property="p0730" />
+        <result column="p0745" property="p0745" />
+        <result column="p0800" property="p0800" />
+        <result column="p0815" property="p0815" />
+        <result column="p0830" property="p0830" />
+        <result column="p0845" property="p0845" />
+        <result column="p0900" property="p0900" />
+        <result column="p0915" property="p0915" />
+        <result column="p0930" property="p0930" />
+        <result column="p0945" property="p0945" />
+        <result column="p1000" property="p1000" />
+        <result column="p1015" property="p1015" />
+        <result column="p1030" property="p1030" />
+        <result column="p1045" property="p1045" />
+        <result column="p1100" property="p1100" />
+        <result column="p1115" property="p1115" />
+        <result column="p1130" property="p1130" />
+        <result column="p1145" property="p1145" />
+        <result column="p1200" property="p1200" />
+        <result column="p1215" property="p1215" />
+        <result column="p1230" property="p1230" />
+        <result column="p1245" property="p1245" />
+        <result column="p1300" property="p1300" />
+        <result column="p1315" property="p1315" />
+        <result column="p1330" property="p1330" />
+        <result column="p1345" property="p1345" />
+        <result column="p1400" property="p1400" />
+        <result column="p1415" property="p1415" />
+        <result column="p1430" property="p1430" />
+        <result column="p1445" property="p1445" />
+        <result column="p1500" property="p1500" />
+        <result column="p1515" property="p1515" />
+        <result column="p1530" property="p1530" />
+        <result column="p1545" property="p1545" />
+        <result column="p1600" property="p1600" />
+        <result column="p1615" property="p1615" />
+        <result column="p1630" property="p1630" />
+        <result column="p1645" property="p1645" />
+        <result column="p1700" property="p1700" />
+        <result column="p1715" property="p1715" />
+        <result column="p1730" property="p1730" />
+        <result column="p1745" property="p1745" />
+        <result column="p1800" property="p1800" />
+        <result column="p1815" property="p1815" />
+        <result column="p1830" property="p1830" />
+        <result column="p1845" property="p1845" />
+        <result column="p1900" property="p1900" />
+        <result column="p1915" property="p1915" />
+        <result column="p1930" property="p1930" />
+        <result column="p1945" property="p1945" />
+        <result column="p2000" property="p2000" />
+        <result column="p2015" property="p2015" />
+        <result column="p2030" property="p2030" />
+        <result column="p2045" property="p2045" />
+        <result column="p2100" property="p2100" />
+        <result column="p2115" property="p2115" />
+        <result column="p2130" property="p2130" />
+        <result column="p2145" property="p2145" />
+        <result column="p2200" property="p2200" />
+        <result column="p2215" property="p2215" />
+        <result column="p2230" property="p2230" />
+        <result column="p2245" property="p2245" />
+        <result column="p2300" property="p2300" />
+        <result column="p2315" property="p2315" />
+        <result column="p2330" property="p2330" />
+        <result column="p2345" property="p2345" />
+        <result column="scope_date" property="scopeDate" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        create_time,
+        update_time,
+        id, area_code, area_name, type, power_type, p0000, p0015, p0030, p0045, p0100, p0115, p0130, p0145, p0200, p0215, p0230, p0245, p0300, p0315, p0330, p0345, p0400, p0415, p0430, p0445, p0500, p0515, p0530, p0545, p0600, p0615, p0630, p0645, p0700, p0715, p0730, p0745, p0800, p0815, p0830, p0845, p0900, p0915, p0930, p0945, p1000, p1015, p1030, p1045, p1100, p1115, p1130, p1145, p1200, p1215, p1230, p1245, p1300, p1315, p1330, p1345, p1400, p1415, p1430, p1445, p1500, p1515, p1530, p1545, p1600, p1615, p1630, p1645, p1700, p1715, p1730, p1745, p1800, p1815, p1830, p1845, p1900, p1915, p1930, p1945, p2000, p2015, p2030, p2045, p2100, p2115, p2130, p2145, p2200, p2215, p2230, p2245, p2300, p2315, p2330, p2345, scope_date, status
+    </sql>
+
+    <!--自定义关联查询-->
+    <!-- 表名 -->
+    <sql id="t_name">biz_power_pack_of</sql>
+    <!-- 别名 -->
+    <sql id="t_alias">biz_power_pack_of as of</sql>
+    <!--外键表关联定义 -->
+    <sql id="join"></sql>
+
+    <!-- 自定义查询单个实体 -->
+    <select id="getEntityMap" resultType="com.dms.cloud.common.mybatis.EntityMap">
+        SELECT * FROM
+        <include refid="t_alias"/>
+        <include refid="join"/>
+        ${ew.customSqlSegment}
+    </select>
+
+    <!-- 自定义关联查询分页 -->
+    <select id="pageList" resultType="com.dms.cloud.common.mybatis.EntityMap">
+        select ${ew.select} FROM
+        <include refid="t_alias"/>
+        <include refid="join"/>
+        ${ew.customSqlSegment}
+    </select>
+</mapper>
