@@ -50,7 +50,6 @@ public class ThreeBarUtil {
     }
 
     public byte[] test() throws Exception {
-        //地址：http://echarts.baidu.com/doc/example/bar12.html
         EnhancedOption option = new EnhancedOption();
         option.title("ECharts2 vs ECharts1", "Chrome下测试数据");
         option.tooltip(Trigger.axis);
@@ -89,7 +88,7 @@ public class ThreeBarUtil {
         b3.data(906, 911, 908, 778, 0);
 
         Bar b4 = new Bar("ECharts1 - 2k数据");
-        b4.itemStyle().normal().color("rgba(193,35,43,0.5)").label().show(true).formatter("function(a,b,c){return c>0 ? (c +'\n'):'';}");
+        b4.itemStyle().normal().color("rgba(193,35,43,0.5)").label().show(true);
         b4.data(96, 224, 164, 124, 0).xAxisIndex(1);
 
         Bar b5 = new Bar("ECharts1 - 2w数据");
@@ -97,11 +96,11 @@ public class ThreeBarUtil {
         b5.data(491, 2035, 389, 955, 347).xAxisIndex(1);
 
         Bar b6 = new Bar("ECharts1 - 20w数据");
-        b6.itemStyle().normal().color("rgba(252,206,16,0.5)").label().show(true).formatter("function(a,b,c){return c>0 ? (c +'+'):'';}");
+        b6.itemStyle().normal().color("rgba(252,206,16,0.5)").label().show(true);
         b6.data(3000, 3000, 2817, 3000, 0, 1242).xAxisIndex(1);
         option.series(b1, b2, b3, b4, b5, b6);
         String optionStr = JSONObject.toJSONString(option);
-        String base64 = EchartsUtil.generateEchartsBase64(optionStr, "http://127.0.0.1:6666");
+        String base64 = EchartsUtil.generateEchartsBase64(optionStr, "http://172.16.0.82:6666");
         BASE64Decoder decoder = new BASE64Decoder();
         byte[] bytes = decoder.decodeBuffer(base64);
         for (int i = 0; i < bytes.length; ++i) {
