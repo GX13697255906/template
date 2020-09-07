@@ -1,24 +1,28 @@
-package first;
+package bar;
 
 import com.alibaba.fastjson.JSONObject;
 import com.github.abel533.echarts.json.GsonOption;
+import first.BarData;
+import first.BarParam;
+import first.EchartBar;
+import first.EchartsUtil;
 import sun.misc.BASE64Decoder;
 
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
-public class Echart {
+public class SingleBarUtil {
 
     public static void main(String[] args) throws Exception {
-        Echart.echartUtil("图例");
+        SingleBarUtil.echartBarUtil("图例");
 //        Demo.wordHutoolUtil();
 //        Demo.wordEasyPoiUtil();
     }
     /**
-     * 生成报表工具
+     * 生成单柱状图工具
      * @throws Exception
      */
-    public static byte[] echartUtil(String title) throws Exception{
+    public static byte[] echartBarUtil(String title) throws Exception{
         BarData data = new BarData();
         data.setTitle("测试报表");
         BarParam barParam = new BarParam();

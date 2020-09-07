@@ -24,15 +24,17 @@
 
 package com.github.abel533.echarts.samples.bar;
 
-import com.alibaba.fastjson.JSONObject;
 import com.github.abel533.echarts.axis.CategoryAxis;
 import com.github.abel533.echarts.axis.ValueAxis;
 import com.github.abel533.echarts.code.*;
+import com.github.abel533.echarts.data.PointData;
 import com.github.abel533.echarts.feature.MagicType;
 import com.github.abel533.echarts.series.Bar;
 import com.github.abel533.echarts.util.EnhancedOption;
 import org.junit.Test;
-import echartsUtils.EchartsUtil;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author liuzh
@@ -40,7 +42,7 @@ import echartsUtils.EchartsUtil;
 public class BarTest14 {
 
     @Test
-    public void test() throws Exception{
+    public void test() {
         //地址：http://echarts.baidu.com/echarts2/doc/example/bar14.html
         EnhancedOption option = new EnhancedOption();
         option.title().text("ECharts例子个数统计").subtext("Rainbow bar example")
@@ -65,19 +67,6 @@ public class BarTest14 {
         bar.data(12,21,10,4,12,5,6,5,25,23,7);
 
         option.series(bar);
-
-        String optionStr = JSONObject.toJSONString(option);
-
-        String base64 = EchartsUtil.generateEchartsBase64(optionStr, "http://127.0.0.1:6666");
-
-
-
-
-
-
-
-
-
         option.exportToHtml("bar14.html");
         option.view();
     }

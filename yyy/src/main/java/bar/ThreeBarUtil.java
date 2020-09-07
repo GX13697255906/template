@@ -22,24 +22,34 @@
  * THE SOFTWARE.
  */
 
-package com.github.abel533.echarts.samples.bar;
+package bar;
 
+import com.alibaba.fastjson.JSONObject;
 import com.github.abel533.echarts.axis.*;
 import com.github.abel533.echarts.code.Magic;
 import com.github.abel533.echarts.code.Tool;
 import com.github.abel533.echarts.code.Trigger;
 import com.github.abel533.echarts.feature.MagicType;
 import com.github.abel533.echarts.series.Bar;
-import com.github.abel533.echarts.util.EnhancedOption;
-import org.junit.Test;
+import first.EchartsUtil;
+import sun.misc.BASE64Decoder;
+import util.EnhancedOption;
+
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 
 /**
  * @author liuzh
  */
-public class BarTest12 {
+public class ThreeBarUtil {
 
-    @Test
-    public void test() {
+
+    public static void main(String[] args) throws Exception {
+        ThreeBarUtil threeBarUtil = new ThreeBarUtil();
+        threeBarUtil.test();
+    }
+
+    public byte[] test() throws Exception {
         //地址：http://echarts.baidu.com/doc/example/bar12.html
         EnhancedOption option = new EnhancedOption();
         option.title("ECharts2 vs ECharts1", "Chrome下测试数据");
@@ -89,10 +99,21 @@ public class BarTest12 {
         Bar b6 = new Bar("ECharts1 - 20w数据");
         b6.itemStyle().normal().color("rgba(252,206,16,0.5)").label().show(true).formatter("function(a,b,c){return c>0 ? (c +'+'):'';}");
         b6.data(3000, 3000, 2817, 3000, 0, 1242).xAxisIndex(1);
-
         option.series(b1, b2, b3, b4, b5, b6);
-
-        option.exportToHtml("bar12.html");
-        option.view();
+        String optionStr = JSONObject.toJSONString(option);
+        String base64 = EchartsUtil.generateEchartsBase64(optionStr, "http://127.0.0.1:6666");
+        BASE64Decoder decoder = new BASE64Decoder();
+        byte[] bytes = decoder.decodeBuffer(base64);
+        for (int i = 0; i < bytes.length; ++i) {
+            if (bytes[i] < 0) {// 调整异常数据
+                bytes[i] += 256;
+            }
+        }
+        // 生成jpeg图片
+        OutputStream out = new FileOutputStream("D:/threeBar.png");
+        out.write(bytes);
+        out.flush();
+        out.close();
+        return bytes;
     }
 }

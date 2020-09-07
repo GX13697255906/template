@@ -22,9 +22,8 @@
  * THE SOFTWARE.
  */
 
-package com.github.abel533.echarts.util;
+package util;
 
-import com.github.abel533.echarts.TestConfig;
 import com.github.abel533.echarts.json.GsonOption;
 import com.github.abel533.echarts.json.GsonUtil;
 import com.github.abel533.echarts.json.OptionUtil;
@@ -34,7 +33,7 @@ import com.github.abel533.echarts.json.OptionUtil;
  *
  * @author liuzh
  */
-public class EnhancedOption extends GsonOption implements TestConfig {
+public class EnhancedOption extends GsonOption{
     private String filepath;
 
     /**
@@ -54,8 +53,9 @@ public class EnhancedOption extends GsonOption implements TestConfig {
     /**
      * 在浏览器中查看
      */
+    @Override
     public void view() {
-        if (!VIEW) {
+        if (!true) {
             return;
         }
         if (this.filepath != null) {
@@ -68,4 +68,5 @@ public class EnhancedOption extends GsonOption implements TestConfig {
             this.filepath = OptionUtil.browse(this);
         }
     }
+
 }

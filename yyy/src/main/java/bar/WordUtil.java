@@ -1,12 +1,10 @@
-package first;
+package bar;
 
 import cn.hutool.core.date.DateUtil;
 import org.apache.poi.util.Units;
-import org.apache.poi.xwpf.converter.core.Color;
 import org.apache.poi.xwpf.usermodel.*;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.*;
 
-import java.awt.*;
 import java.io.ByteArrayInputStream;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
@@ -72,15 +70,6 @@ public class WordUtil {
         pageSize.setW(BigInteger.valueOf(11907));
         pageSize.setH(BigInteger.valueOf(16840));
         pageSize.setOrient(STPageOrientation.PORTRAIT);
-//        CTP ctp = CTP.Factory.newInstance();
-//        XWPFParagraph paragraph = new XWPFParagraph(ctp, docxDocument);
-//        ctp.addNewR().addNewT().setStringValue("页眉");
-//        ctp.addNewR().addNewT().setSpace(SpaceAttribute.Space.PRESERVE);
-//        CTSectPr sectPr = docxDocument.getDocument().getBody().isSetSectPr() ? docxDocument.getDocument().getBody().getSectPr() : docxDocument.getDocument().getBody().addNewSectPr();
-//        XWPFHeaderFooterPolicy policy = new XWPFHeaderFooterPolicy(docxDocument, sectPr);
-//        XWPFHeader header = policy.createHeader(STHdrFtr.DEFAULT, new XWPFParagraph[] { paragraph });
-//        header.setXWPFDocument(docxDocument);
-
         //创建段落1对象
         XWPFParagraph paraGraphX1 = docxDocument.createParagraph();
         //创建文本1对象
@@ -133,7 +122,7 @@ public class WordUtil {
          */
         wordUtil.marketRunSummary(docxDocument, startDate, endDate);
         //输出文档到指定地点
-        OutputStream os = new FileOutputStream("D:\\能监局周报（" + getStringDate(startDate, 5) + "-" + getStringDate(endDate, 6) +")-"+ System.currentTimeMillis()+".docx");
+        OutputStream os = new FileOutputStream("D:\\能监局周报（" + getStringDate(startDate, 5) + "-" + getStringDate(endDate, 6) + ")-" + System.currentTimeMillis() + ".docx");
         docxDocument.write(os);
         os.close();
     }
@@ -143,7 +132,6 @@ public class WordUtil {
      */
     public void marketSubjectNumber(XWPFDocument docxDocument, String startDate, String endDate) throws Exception {
         XWPFParagraph titleParagraph = docxDocument.createParagraph();
-
         XWPFRun titleRun = titleParagraph.createRun();
         titleRun.setText("参与市场主体数量");
         titleRun.setUnderline(UnderlinePatterns.DOUBLE);
@@ -246,7 +234,7 @@ public class WordUtil {
         XWPFParagraph pictureParagraph = docxDocument.createParagraph();
         XWPFRun pictureRun = pictureParagraph.createRun();
         pictureParagraph.setAlignment(ParagraphAlignment.CENTER);
-        byte[] bytes = Echart.echartUtil("市场边界条件");
+        byte[] bytes = SingleBarUtil.echartBarUtil("市场边界条件");
         ByteArrayInputStream bis = new ByteArrayInputStream(bytes);
         bis.reset();
         pictureRun.addPicture(bis, XWPFDocument.PICTURE_TYPE_PNG, "市场边界条件", Units.toEMU(410), Units.toEMU(180));
@@ -276,7 +264,7 @@ public class WordUtil {
         XWPFParagraph oneParagraphPicture = docxDocument.createParagraph();
         XWPFRun oneRunPicture = oneParagraphPicture.createRun();
         oneParagraphPicture.setAlignment(ParagraphAlignment.CENTER);
-        byte[] bytes2 = Echart.echartUtil("市场成员申报");
+        byte[] bytes2 = SingleBarUtil.echartBarUtil("市场成员申报");
         ByteArrayInputStream bis2 = new ByteArrayInputStream(bytes2);
         bis2.reset();
         oneRunPicture.addPicture(bis2, XWPFDocument.PICTURE_TYPE_PNG, "市场成员申报", Units.toEMU(300), Units.toEMU(150));
@@ -293,7 +281,7 @@ public class WordUtil {
         XWPFParagraph twoParagraphPicture = docxDocument.createParagraph();
         XWPFRun twoRunPicture = twoParagraphPicture.createRun();
         twoParagraphPicture.setAlignment(ParagraphAlignment.CENTER);
-        byte[] bytes3 = Echart.echartUtil("市场成员申报");
+        byte[] bytes3 = SingleBarUtil.echartBarUtil("市场成员申报");
         ByteArrayInputStream bis3 = new ByteArrayInputStream(bytes3);
         bis3.reset();
         twoRunPicture.addPicture(bis3, XWPFDocument.PICTURE_TYPE_PNG, "市场成员申报", Units.toEMU(410), Units.toEMU(180));
@@ -323,7 +311,7 @@ public class WordUtil {
         XWPFParagraph pictureParagraph = docxDocument.createParagraph();
         XWPFRun pictureRun = pictureParagraph.createRun();
         pictureParagraph.setAlignment(ParagraphAlignment.CENTER);
-        byte[] bytes4 = Echart.echartUtil("市场出清");
+        byte[] bytes4 = SingleBarUtil.echartBarUtil("市场出清");
         ByteArrayInputStream bis4 = new ByteArrayInputStream(bytes4);
         bis4.reset();
         pictureRun.addPicture(bis4, XWPFDocument.PICTURE_TYPE_PNG, "市场出清", Units.toEMU(410), Units.toEMU(210));
@@ -360,7 +348,7 @@ public class WordUtil {
         XWPFParagraph pictureParagraph = docxDocument.createParagraph();
         XWPFRun prctireRun = pictureParagraph.createRun();
         pictureParagraph.setAlignment(ParagraphAlignment.CENTER);
-        byte[] bytes5 = Echart.echartUtil("市场结构");
+        byte[] bytes5 = SingleBarUtil.echartBarUtil("市场结构");
         ByteArrayInputStream bis5 = new ByteArrayInputStream(bytes5);
         bis5.reset();
         prctireRun.addPicture(bis5, XWPFDocument.PICTURE_TYPE_PNG, "市场结构", Units.toEMU(410), Units.toEMU(190));
@@ -420,23 +408,5 @@ public class WordUtil {
         sevenTextRun.setFontFamily("宋体");
         sevenTextRun.setFontSize(10);
         sevenTextRun.setTextPosition(22);
-    }
-
-    public void line(XWPFDocument docxDocument) throws Exception {
-        XWPFParagraph lineParagraph = docxDocument.createParagraph();
-        XWPFRun lineRun = lineParagraph.createRun();
-        lineRun.setFontFamily("宋体");
-        lineRun.setFontSize(10);
-        lineRun.setTextPosition(6);
-        lineRun.setBold(true);
-        lineParagraph.setAlignment(ParagraphAlignment.LEFT);
-        lineRun.setText("-------------------dfdfdf-----------------------"+"                                        ");
-//        lineRun.setUnderline(UnderlinePatterns.SINGLE);
-//        lineRun.setUnderline(UnderlinePatterns.WORDS);
-//        lineRun.setUnderline(UnderlinePatterns.DOUBLE);
-        lineRun.setUnderline(UnderlinePatterns.WAVY_HEAVY);
-//        lineRun.setUnderline(UnderlinePatterns.DOTTED_HEAVY);
-
-
     }
 }
