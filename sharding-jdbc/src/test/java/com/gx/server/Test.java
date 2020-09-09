@@ -1,14 +1,18 @@
-//package com.gx.server;
-//
-//import cn.hutool.core.util.NumberUtil;
-//import com.gx.server.entity.UnitEnergyQuoteInfo;
-//
-//import java.awt.geom.Rectangle2D;
-//import java.lang.reflect.Field;
-//import java.util.*;
-//import java.util.stream.Collectors;
-//
-//public class Test {
+package com.gx.server;
+
+import cn.hutool.core.date.DateUtil;
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        String disclosureTime = "20191118_114015";
+        String parse = DateUtil.format(DateUtil.parse(disclosureTime.substring(9, 15), "HHmmss"), "HH:mm:ss");
+        System.out.println(parse);
+
+    }
+
+}
 //
 //    private static String numberComplement(Integer number) {
 //        return number < 10 ? "0" + number.toString() : number.toString();

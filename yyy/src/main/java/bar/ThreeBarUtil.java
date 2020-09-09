@@ -27,6 +27,7 @@ package bar;
 import com.alibaba.fastjson.JSONObject;
 import com.github.abel533.echarts.axis.*;
 import com.github.abel533.echarts.code.Magic;
+import com.github.abel533.echarts.code.Position;
 import com.github.abel533.echarts.code.Tool;
 import com.github.abel533.echarts.code.Trigger;
 import com.github.abel533.echarts.feature.MagicType;
@@ -43,10 +44,9 @@ import java.io.OutputStream;
  */
 public class ThreeBarUtil {
 
-
     public static void main(String[] args) throws Exception {
         ThreeBarUtil threeBarUtil = new ThreeBarUtil();
-        threeBarUtil.test();
+        threeBarUtil.generationAQ();
     }
 
     public byte[] test() throws Exception {
@@ -78,7 +78,6 @@ public class ThreeBarUtil {
         Bar b1 = new Bar("ECharts2 - 2k数据");
         b1.itemStyle().normal().color("rgba(193,35,43,1)").label().show(true);
         b1.data(40, 155, 95, 75, 0);
-
         Bar b2 = new Bar("ECharts2 - 2w数据");
         b2.itemStyle().normal().color("rgba(181,195,52,1)").label().show(true).textStyle().color("#27727B");
         b2.data(100, 200, 105, 100, 156);
@@ -110,6 +109,56 @@ public class ThreeBarUtil {
         }
         // 生成jpeg图片
         OutputStream out = new FileOutputStream("D:/threeBar.png");
+        out.write(bytes);
+        out.flush();
+        out.close();
+        return bytes;
+    }
+
+    //字放在上方
+    //发电测平均报价图
+    public byte[] generationAQ() throws Exception {
+        EnhancedOption option = new EnhancedOption();
+        option.title("发电测平均报价");
+        option.tooltip(Trigger.axis);
+        option.legend("所有机组", "燃煤机组", "燃气机组");
+        option.calculable(true);
+        option.grid().y(60).y2(30).x2(60);
+        option.xAxis(
+                new CategoryAxis().data("8月15日", "8月16日", "8月17日", "8月18日", "8月19日", "8月20日", "8月21日"),
+                new CategoryAxis()
+                        .axisLine(new AxisLine().show(false))
+                        .axisTick(new AxisTick().show(true))
+                        .axisLabel(new AxisLabel().show(false))
+                        .splitArea(new SplitArea().show(false))
+                        .axisLine(new AxisLine().show(false))
+                        .data("8月15日", "8月16日", "8月17日", "8月18日", "8月19日", "8月20日", "8月21日")
+        );
+        option.yAxis(new ValueAxis().axisLabel(new AxisLabel().formatter("{value}")));
+
+        Bar b4 = new Bar("所有机组");
+        b4.itemStyle().normal().color("rgba(65,105,225,1)").label().position(Position.top).show(true).textStyle().color("#000000").fontSize(14);
+        b4.data(458.69, 460.55, 459.71, 451.06, 469.79, 490.14, 485.05).xAxisIndex(1);
+
+        Bar b5 = new Bar("燃煤机组");
+        b5.itemStyle().normal().color("rgba(225,140,0,1)").label().position(Position.top).show(true).textStyle().color("#000000").fontSize(14);
+        b5.data(411.79, 460.2, 412.8, 403.76, 426.87, 445.42, 440.21).xAxisIndex(1);
+
+        Bar b6 = new Bar("燃气机组");
+        b6.itemStyle().normal().color("rgba(169,169,169,1)").label().position(Position.top).show(true).textStyle().color("#000000").fontSize(14);
+        b6.data(650.21, 686.26, 652.23, 644.4, 646.19, 659.31, 654.26).xAxisIndex(1);
+        option.series(b4, b5, b6);
+        String optionStr = JSONObject.toJSONString(option);
+        String base64 = EchartsUtil.generateEchartsBase64(optionStr, "http://172.16.0.82:6666");
+        BASE64Decoder decoder = new BASE64Decoder();
+        byte[] bytes = decoder.decodeBuffer(base64);
+        for (int i = 0; i < bytes.length; ++i) {
+            if (bytes[i] < 0) {// 调整异常数据
+                bytes[i] += 256;
+            }
+        }
+        // 生成jpeg图片
+        OutputStream out = new FileOutputStream("G:/....zzm乱七八糟/发电测平均报价图.png");
         out.write(bytes);
         out.flush();
         out.close();

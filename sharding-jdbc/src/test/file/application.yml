@@ -32,46 +32,25 @@ spring:
 sharding:
   jdbc:
     datasource:
-      names: guangdong,guangxi,hainan,yunnan,guizhou
+      names: guangdong , haihan
       guangdong:
         type: com.alibaba.druid.pool.DruidDataSource
-        driver-class-name: com.mysql.cj.jdbc.Driver
+        driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://172.16.0.35:3306/dms?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
         username: root
         password: root
-      guangxi:
+      haihan:
         type: com.alibaba.druid.pool.DruidDataSource
-        driver-class-name: com.mysql.cj.jdbc.Driver
+        driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://172.16.0.36:3306/dms?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-        username: root
-        password: root
-      hainan:
-        type: com.alibaba.druid.pool.DruidDataSource
-        driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://172.16.0.35:3306/dms?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-        username: root
-        password: root
-      yunnan:
-        type: com.alibaba.druid.pool.DruidDataSource
-        driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://172.16.0.35:3306/dms?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-        username: root
-        password: root
-      guizhou:
-        type: com.alibaba.druid.pool.DruidDataSource
-        driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://172.16.0.35:3306/dms?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
         username: root
         password: root
     config:
       sharding:
         # 默认数据源（未设置分表策略的表将默认用此数据源）
-#        default-datasource-name: guangdong
+        default-datasource-name: guangdong
         # 默认分库策略
         default-database-strategy:
-#          inline:
-#            sharding-column: area_code
-#            algorithm-expression: $->{area_code}
           standard:
             sharding-column: area_code
             # 自定义的分片策略
@@ -80,7 +59,7 @@ sharding:
         tables:
           # 分库分表
           biz_user_quote_info:
-            actual-data-nodes: ${['guangdong','guangxi','hainan','yunnan','guizhou']}.biz_user_quote_info_$->{202005..202008}
+            actual-data-nodes: ${['guangdong','hainan']}.biz_user_quote_info_$->{202005..202008}
             # 精确分片算法，对应PreciseShardingAlgorithm
             table-strategy:
               inline:
