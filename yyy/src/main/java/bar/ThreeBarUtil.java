@@ -46,7 +46,7 @@ public class ThreeBarUtil {
 
     public static void main(String[] args) throws Exception {
         ThreeBarUtil threeBarUtil = new ThreeBarUtil();
-        threeBarUtil.generationAQ();
+        threeBarUtil.genSideAveOffer();
     }
 
     public byte[] test() throws Exception {
@@ -117,7 +117,7 @@ public class ThreeBarUtil {
 
     //字放在上方
     //发电测平均报价图
-    public byte[] generationAQ() throws Exception {
+    public byte[] genSideAveOffer() throws Exception {
         EnhancedOption option = new EnhancedOption();
         option.title("发电测平均报价");
         option.tooltip(Trigger.axis);
@@ -158,7 +158,7 @@ public class ThreeBarUtil {
             }
         }
         // 生成jpeg图片
-        OutputStream out = new FileOutputStream("G:/....zzm乱七八糟/发电测平均报价图.png");
+        OutputStream out = new FileOutputStream("D:/发电测平均报价图.png");
         out.write(bytes);
         out.flush();
         out.close();
