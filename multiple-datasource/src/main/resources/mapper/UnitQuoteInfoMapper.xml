@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dms.cloud.mapper.UnitQuoteInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dms.cloud.entity.UnitQuoteInfo">
+        <id column="id" property="id" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="power_plant_code" property="powerPlantCode" />
+        <result column="unit_code" property="unitCode" />
+        <result column="power_plant_name" property="powerPlantName" />
+        <result column="unit_name" property="unitName" />
+        <result column="hotstarting_cost" property="hotstartingCost" />
+        <result column="warmstarting_cost" property="warmstartingCost" />
+        <result column="coldstarting_cost" property="coldstartingCost" />
+        <result column="unloaded_cost" property="unloadedCost" />
+        <result column="scope_date" property="scopeDate" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        create_time,
+        update_time,
+        id, power_plant_code, unit_code, power_plant_name, unit_name, hotstarting_cost, warmstarting_cost, coldstarting_cost, unloaded_cost, scope_date, status
+    </sql>
+
+    <!--自定义关联查询-->
+    <!-- 表名 -->
+    <sql id="t_name">biz_unit_start_and_connction_quotation</sql>
+    <!-- 别名 -->
+    <sql id="t_alias">biz_unit_start_and_connction_quotation as quotation</sql>
+    <!--外键表关联定义 -->
+    <sql id="join"></sql>
+
+    <!-- 自定义查询单个实体 -->
+    <select id="getEntityMap" resultType="com.dms.cloud.common.mybatis.EntityMap">
+        SELECT * FROM
+        <include refid="t_alias"/>
+        <include refid="join"/>
+        ${ew.customSqlSegment}
+    </select>
+
+    <!-- 自定义关联查询分页 -->
+    <select id="pageList" resultType="com.dms.cloud.common.mybatis.EntityMap">
+        select ${ew.select} FROM
+        <include refid="t_alias"/>
+        <include refid="join"/>
+        ${ew.customSqlSegment}
+    </select>
+</mapper>

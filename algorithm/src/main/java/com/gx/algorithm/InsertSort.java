@@ -7,27 +7,21 @@ package com.gx.algorithm;
 public class InsertSort {
 
     public static void main(String[] args) {
-        Integer[] array = new Integer[]{45, 89, 12, 0, 32, 78, 1};
+        Integer[] ars = new Integer[]{45, 89, 12, 0, 32, 78, 1};
 
-        array = InsertSort.asc(array);
+        InsertSort.asc(ars);
 
-        for (Integer integer : array) {
+        for (Integer integer : ars) {
             System.out.println(integer);
         }
     }
 
 
-    public static Integer[] asc(Integer[] array) {
-        for (int i = 0; i < array.length; i++) {
-            for (int j = i; j < array.length-1; j++) {
-                if (array[j] > array[j + 1]) {
-                    Integer tempValue = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = tempValue;
-                }
-            }
+    public static Integer[] asc(Integer[] ars) {
+        for (int i = 0; i < ars.length; i++) {
+
         }
-        return array;
+
     }
 
 
@@ -36,7 +30,7 @@ public class InsertSort {
      *
      * @return
      */
-    public static Integer[] desc(Integer[] array) {
+    public static Integer[] desc(Integer[] ars) {
 
         return null;
     }
