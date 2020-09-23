@@ -17,8 +17,6 @@ public abstract class BaseServiceImpl<M extends SuperMapper<T>, T> extends Servi
 
     @Autowired
     public ApplicationContext applicationContext;
-    @Resource
-    public SqlSessionTemplate sqlSession;
 
 
 }
