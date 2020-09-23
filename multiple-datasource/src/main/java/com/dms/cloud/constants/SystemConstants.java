@@ -2,14 +2,30 @@ package com.dms.cloud.constants;
 
 public class SystemConstants {
 
+    public static final String AREA_CODE_NAME = "areaCode";
+
+    public static final String MARKET_ID_NAME = "marketId";
+
+    /**
+     * 电能量市场ID
+     */
+    public static final Long MARKET_EL_ID = 1307965417568268290L;
     /**
      * 电能量市场编码
      */
     public static final String MARKET_EL_CODE = "001";
     /**
+     * 调频市场ID
+     */
+    public static final Long MARKET_FM_ID = 1307965506793697282L;
+    /**
      * 调频市场编码
      */
     public static final String MARKET_FM_CODE = "002";
+    /**
+     * 调峰市场ID
+     */
+    public static final Long MARKET_PR_ID = 1307965544064282626L;
     /**
      * 调峰市场编码
      */

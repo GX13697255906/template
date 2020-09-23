@@ -1,11 +1,11 @@
-package com.dms.cloud.biz306.client.constants;
+package com.dms.cloud.constants;
 
 /**
  * @ClassName ClearResultsConstant
  * @Author TianShuai
  * @Date 2019/10/13 10:10
  */
-public class Biz306Constants {
+public class Constants {
     public static final String DECLARE_INFO_SERVER = "dms-biz306-server";
 
     /**
@@ -23,4 +23,6 @@ public class Biz306Constants {
      * 状态:1-无效
      */
     public final static int DISABLED = 1;
+
+    public final static String yyyyMMddhhmmss = "yyyy-MM-dd hh:mm:ss";
 }

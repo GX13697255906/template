@@ -7,9 +7,10 @@ public class DataSourceContextHolder {
 
     private static final ThreadLocal contextHold = new ThreadLocal();
 
-    public static void setDbType(String dbType) {
+    public static String setDbType(String dbType) {
         log.info("设置数据源：{}", dbType);
         contextHold.set(dbType);
+        return dbType;
     }
 
     /**

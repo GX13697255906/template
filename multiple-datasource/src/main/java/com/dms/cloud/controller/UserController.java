@@ -25,9 +25,7 @@ public class UserController {
     private UserQuoteInfoService quoteInfoService;
 
     @GetMapping(value = "/get")
-    public List<UserQuoteInfo> get(@RequestParam(value = "areaCode") String areaCode, @RequestParam(value = "marketCode") String marketCode) {
-
-        System.out.println("+++++++++++++++++++++++"+marketCode+"+++++++++++++++++++++++");
+    public List<UserQuoteInfo> get(@RequestParam(value = "areaCode") String areaCode) {
         QueryWrapper<UserQuoteInfo> queryWrapper = new QueryWrapper();
         queryWrapper.lambda().
                 eq(UserQuoteInfo::getAreaCode, areaCode);
