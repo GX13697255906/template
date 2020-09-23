@@ -63,8 +63,8 @@ public class DataSourcePool {
         if (areaCode.equals(SystemConstants.AREA_CODE_HAINAN) && marketId.longValue() == SystemConstants.MARKET_PR_ID) {
             dataSourceName = DataSourceContextHolder.setDbType(SystemConstants.DATA_SOURCE_HAINAN_DMS_PR);
         }
-        log.info("当前数据源为 ：%s 时间：%s", dataSourceName, DateUtil.format(new Date(), Constants.yyyyMMddhhmmss));
-        if(StringUtils.isEmpty(dataSourceName)){
+        log.info(String.format("当前数据源为 ：%s 时间：%s", dataSourceName, DateUtil.format(new Date(), Constants.yyyyMMddhhmmss)));
+        if (StringUtils.isEmpty(dataSourceName)) {
             throw new Exception("数据源不能正确获取到，区域编码或市场ID未能正确获取到");
         }
     }
