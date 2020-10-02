@@ -20,6 +20,7 @@
         <module name="springsecurity" />
         <module name="template" />
         <module name="websocket" />
+        <module name="word-util" />
       </profile>
       <profile name="Annotation profile for word-util" enabled="true">
         <sourceOutputDir name="../../../../workspace/yyy/target/generated-sources/annotations" />
@@ -44,6 +45,7 @@
       <module name="springsecurity" options="-parameters" />
       <module name="template" options="-parameters" />
       <module name="websocket" options="-parameters" />
+      <module name="word-util" options="-parameters" />
       <module name="yyy" options="-parameters" />
     </option>
   </component>
