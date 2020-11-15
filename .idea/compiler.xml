@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="algorithm" />
+        <module name="aviator" />
         <module name="client" />
         <module name="common" />
         <module name="echarts" />
@@ -20,12 +21,6 @@
         <module name="springsecurity" />
         <module name="template" />
         <module name="websocket" />
-        <module name="word-util" />
-      </profile>
-      <profile name="Annotation profile for word-util" enabled="true">
-        <sourceOutputDir name="../../../../workspace/yyy/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../../../workspace/yyy/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="yyy" />
       </profile>
     </annotationProcessing>
@@ -33,6 +28,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="algorithm" options="-parameters" />
+      <module name="aviator" options="-parameters" />
       <module name="client" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="echarts" options="-parameters" />
@@ -45,7 +41,6 @@
       <module name="springsecurity" options="-parameters" />
       <module name="template" options="-parameters" />
       <module name="websocket" options="-parameters" />
-      <module name="word-util" options="-parameters" />
       <module name="yyy" options="-parameters" />
     </option>
   </component>

@@ -4,22 +4,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/pom.xml" />
-        <option value="$PROJECT_DIR$/common/pom.xml" />
-        <option value="$PROJECT_DIR$/server/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/netty/pom.xml" />
-        <option value="$PROJECT_DIR$/ratelimiter/pom.xml" />
-        <option value="$PROJECT_DIR$/springsecurity/pom.xml" />
-        <option value="$PROJECT_DIR$/echarts/pom.xml" />
-        <option value="$PROJECT_DIR$/sharding-jdbc/pom.xml" />
-        <option value="$PROJECT_DIR$/websocket/pom.xml" />
-        <option value="F:/workspace/yyy/pom.xml" />
-        <option value="$PROJECT_DIR$/yyy/pom.xml" />
-        <option value="$PROJECT_DIR$/algorithm/pom.xml" />
-        <option value="$PROJECT_DIR$/elasticsearch/pom.xml" />
-        <option value="$PROJECT_DIR$/multiple-datasource/pom.xml" />
-        <option value="$PROJECT_DIR$/aviator/pom.xml" />
       </list>
     </option>
   </component>
