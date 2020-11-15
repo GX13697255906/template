@@ -127,10 +127,7 @@ public class CommentsUtil {
 
     public static boolean isConstructor(String line){
         line = line.substring(0,line.indexOf("(")).trim();
-        if (line.split(" ").length == 2) {
-            return true;
-        }
-        return false;
+        return line.split(" ").length == 2;
     }
 
     public static String getMethodFieldName(String line) {

@@ -61,7 +61,7 @@ public enum Event {
      *
      * @param event
      */
-    private Event(String event) {
+    Event(String event) {
         this.event = event;
     }
 

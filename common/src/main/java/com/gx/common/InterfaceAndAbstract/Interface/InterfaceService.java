@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface InterfaceService<T> {
 
-    public String name = InterfaceService.class.getSimpleName();
+    String name = InterfaceService.class.getSimpleName();
 
     default void print() {
         System.out.println("InterfaceDomo");

@@ -13,7 +13,7 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 
 public class FourBarUtil {
-    public static void main(String args[])throws Exception{
+    public static void main(String[] args)throws Exception{
         FourBarUtil fourBarUtil = new FourBarUtil();
         fourBarUtil.generationClean();
     }

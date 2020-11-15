@@ -72,7 +72,7 @@ public class MybatisPlusConfig {
         configuration.setMapUnderscoreToCamelCase(true);
         configuration.setCacheEnabled(false);
         sqlSessionFactory.setConfiguration(configuration);
-        sqlSessionFactory.setPlugins(new Interceptor[]{paginationInterceptor()});
+        sqlSessionFactory.setPlugins(paginationInterceptor());
         return sqlSessionFactory.getObject();
     }
 }

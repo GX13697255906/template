@@ -28,6 +28,7 @@ import com.github.abel533.echarts.Option;
 
 import java.io.*;
 import java.lang.reflect.Method;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -101,7 +102,7 @@ public class OptionUtil {
         String line;
         try {
             is = OptionUtil.class.getResourceAsStream("/template");
-            iReader = new InputStreamReader(is, "UTF-8");
+            iReader = new InputStreamReader(is, StandardCharsets.UTF_8);
             bufferedReader = new BufferedReader(iReader);
             while ((line = bufferedReader.readLine()) != null) {
                 if (line.contains("##option##")) {
@@ -139,7 +140,7 @@ public class OptionUtil {
         //写入文件
         File html = new File(getFolderPath(folderPath) + "/" + fileName);
         try {
-            writer = new OutputStreamWriter(new FileOutputStream(html), "UTF-8");
+            writer = new OutputStreamWriter(new FileOutputStream(html), StandardCharsets.UTF_8);
             for (String l : lines) {
                 writer.write(l + "\n");
             }
@@ -188,8 +189,8 @@ public class OptionUtil {
         if (osName.startsWith("Mac OS")) {
             //苹果的打开方式
             Class fileMgr = Class.forName("com.apple.eio.FileManager");
-            Method openURL = fileMgr.getDeclaredMethod("openURL", new Class[]{String.class});
-            openURL.invoke(null, new Object[]{url});
+            Method openURL = fileMgr.getDeclaredMethod("openURL", String.class);
+            openURL.invoke(null, url);
         } else if (osName.startsWith("Windows")) {
             //windows的打开方式。
             Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + url);

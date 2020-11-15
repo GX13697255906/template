@@ -611,7 +611,7 @@ define(function (require) {
                     special: ecData.get(target, 'special')
                 };
             }
-            return;
+
         },
 
         _noDataCheck: function(magicOption) {

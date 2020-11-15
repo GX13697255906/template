@@ -113,10 +113,7 @@ public class ChainUtil {
                 public boolean accept(File dir, String name) {
                     if (dir.isDirectory()) {
                         return true;
-                    } else if (name.toUpperCase().endsWith(".JAVA")) {
-                        return true;
-                    }
-                    return false;
+                    } else return name.toUpperCase().endsWith(".JAVA");
                 }
             });
             for (File f : files) {
