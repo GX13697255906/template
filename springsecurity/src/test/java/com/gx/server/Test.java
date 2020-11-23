@@ -1,9 +1,7 @@
 package com.gx.server;
 
 import cn.hutool.core.util.NumberUtil;
-import com.dms.cloud.biz306.client.model.entity.UnitEnergyQuoteInfo;
 
-import java.lang.reflect.Field;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -27,18 +25,6 @@ public class Test {
             map.put(hour30, i);
             map.put(hour45, i);
         }
-
-
-        UnitEnergyQuoteInfo unitEnergyQuoteInfo = new UnitEnergyQuoteInfo();
-
-        try {
-            Field field = UnitEnergyQuoteInfo.class.getDeclaredField("powerPlantCode");
-            field.setAccessible(true);
-            System.out.println(   (field.get(unitEnergyQuoteInfo) == null?0D:(Double)field.get(unitEnergyQuoteInfo)) + 1    );
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
         System.out.println("===============================");
 
         Double d1 = 1D;

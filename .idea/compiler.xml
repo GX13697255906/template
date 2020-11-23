@@ -21,6 +21,7 @@
         <module name="springsecurity" />
         <module name="template" />
         <module name="websocket" />
+        <module name="word-util" />
         <module name="yyy" />
       </profile>
     </annotationProcessing>
@@ -41,6 +42,7 @@
       <module name="springsecurity" options="-parameters" />
       <module name="template" options="-parameters" />
       <module name="websocket" options="-parameters" />
+      <module name="word-util" options="-parameters" />
       <module name="yyy" options="-parameters" />
     </option>
   </component>

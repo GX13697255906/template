@@ -1,7 +1,6 @@
 package com.gx.common.CollectionTemplate;
 
 import com.google.common.collect.Lists;
-import com.zhuozhengsoft.pageoffice.zoomseal.User;
 
 import java.util.*;
 
