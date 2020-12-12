@@ -13,6 +13,7 @@
         <module name="common" />
         <module name="echarts" />
         <module name="elasticsearch" />
+        <module name="helper" />
         <module name="multiple-datasource" />
         <module name="netty" />
         <module name="ratelimiter" />
@@ -34,6 +35,7 @@
       <module name="common" options="-parameters" />
       <module name="echarts" options="-parameters" />
       <module name="elasticsearch" options="-parameters" />
+      <module name="helper" options="-parameters" />
       <module name="multiple-datasource" options="-parameters" />
       <module name="netty" options="-parameters" />
       <module name="ratelimiter" options="-parameters" />

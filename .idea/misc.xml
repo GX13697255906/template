@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/elasticsearch/pom.xml" />
         <option value="$PROJECT_DIR$/multiple-datasource/pom.xml" />
         <option value="$PROJECT_DIR$/aviator/pom.xml" />
+        <option value="$PROJECT_DIR$/helper/pom.xml" />
       </list>
     </option>
   </component>
