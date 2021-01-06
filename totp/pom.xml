@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.gx</groupId>
-    <artifactId>common</artifactId>
+    <artifactId>totp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>common</name>
+    <name>totp</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

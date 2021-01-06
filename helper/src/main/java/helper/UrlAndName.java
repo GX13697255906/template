@@ -6,6 +6,11 @@ public class UrlAndName {
 
     private String syncName;
 
+    public UrlAndName(String url, String syncName) {
+        this.url = url;
+        this.syncName = syncName;
+    }
+
     public String getUrl() {
         return url;
     }

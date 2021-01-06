@@ -19,7 +19,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -32,7 +31,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -45,7 +43,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -58,7 +55,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -71,7 +67,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -84,7 +79,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -97,7 +91,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -110,7 +103,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -123,7 +115,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -136,7 +127,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -149,7 +139,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -162,7 +151,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -175,7 +163,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -188,7 +175,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -201,7 +187,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -214,7 +199,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -227,7 +211,6 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -240,7 +223,42 @@ public class StringAndStringBuilder {
         str = str + i;
         str = str + i;
         str = str + i;
-        str = str + i;str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
+        str = str + i;
         str = str + i;
         str = str + i;
         str = str + i;
@@ -260,6 +278,9 @@ public class StringAndStringBuilder {
 
         long time3 = System.currentTimeMillis();
         StringBuilder sb = new StringBuilder();
+
+        StringBuffer sf = new StringBuffer();
+
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -273,7 +294,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -286,7 +306,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -299,7 +318,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -312,7 +330,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -325,7 +342,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -338,7 +354,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -351,7 +366,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -364,7 +378,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -377,7 +390,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -390,7 +402,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -403,7 +414,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -416,7 +426,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -429,7 +438,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -442,7 +450,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -455,7 +462,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -468,7 +474,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -481,7 +486,6 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
@@ -494,7 +498,42 @@ public class StringAndStringBuilder {
         sb.append(i);
         sb.append(i);
         sb.append(i);
-        sb.append(i);sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
+        sb.append(i);
         sb.append(i);
         sb.append(i);
         sb.append(i);
