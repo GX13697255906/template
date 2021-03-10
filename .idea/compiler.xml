@@ -15,16 +15,20 @@
         <module name="elasticsearch" />
         <module name="helper" />
         <module name="multiple-datasource" />
-        <module name="netty" />
+        <module name="netty_client" />
+        <module name="netty_common" />
+        <module name="netty_server" />
+        <module name="netty_web_socket_client" />
+        <module name="netty_web_socket_server" />
         <module name="rabbitmq" />
         <module name="ratelimiter" />
+        <module name="redis" />
         <module name="server" />
         <module name="sharding-jdbc" />
         <module name="springsecurity" />
-        <module name="template" />
         <module name="totp" />
+        <module name="transaction" />
         <module name="websocket" />
-        <module name="word-util" />
         <module name="yyy" />
       </profile>
     </annotationProcessing>
@@ -39,16 +43,20 @@
       <module name="elasticsearch" options="-parameters" />
       <module name="helper" options="-parameters" />
       <module name="multiple-datasource" options="-parameters" />
-      <module name="netty" options="-parameters" />
+      <module name="netty_client" options="-parameters" />
+      <module name="netty_common" options="-parameters" />
+      <module name="netty_server" options="-parameters" />
+      <module name="netty_web_socket_client" options="-parameters" />
+      <module name="netty_web_socket_server" options="-parameters" />
       <module name="rabbitmq" options="-parameters" />
       <module name="ratelimiter" options="-parameters" />
+      <module name="redis" options="-parameters" />
       <module name="server" options="-parameters" />
       <module name="sharding-jdbc" options="-parameters" />
       <module name="springsecurity" options="-parameters" />
-      <module name="template" options="-parameters" />
       <module name="totp" options="-parameters" />
+      <module name="transaction" options="-parameters" />
       <module name="websocket" options="-parameters" />
-      <module name="word-util" options="-parameters" />
       <module name="yyy" options="-parameters" />
     </option>
   </component>
