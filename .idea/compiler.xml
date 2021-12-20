@@ -7,29 +7,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="algorithm" />
-        <module name="aviator" />
-        <module name="client" />
+        <module name="server" />
+        <module name="totp" />
+        <module name="netty_client" />
+        <module name="springsecurity" />
+        <module name="ratelimiter" />
+        <module name="netty_web_socket_client" />
+        <module name="redis" />
         <module name="common" />
-        <module name="echarts" />
         <module name="elasticsearch" />
         <module name="helper" />
-        <module name="multiple-datasource" />
-        <module name="netty_client" />
-        <module name="netty_common" />
-        <module name="netty_server" />
-        <module name="netty_web_socket_client" />
-        <module name="netty_web_socket_server" />
-        <module name="rabbitmq" />
-        <module name="ratelimiter" />
-        <module name="redis" />
-        <module name="server" />
-        <module name="sharding-jdbc" />
-        <module name="springsecurity" />
-        <module name="totp" />
-        <module name="transaction" />
+        <module name="echarts" />
         <module name="websocket" />
         <module name="yyy" />
+        <module name="client" />
+        <module name="netty_common" />
+        <module name="algorithm" />
+        <module name="multiple-datasource" />
+        <module name="aviator" />
+        <module name="word-util" />
+        <module name="rabbitmq" />
+        <module name="sharding-jdbc" />
+        <module name="netty_web_socket_server" />
+        <module name="netty_server" />
+        <module name="juc" />
+        <module name="transaction" />
       </profile>
     </annotationProcessing>
   </component>
@@ -57,6 +59,7 @@
       <module name="totp" options="-parameters" />
       <module name="transaction" options="-parameters" />
       <module name="websocket" options="-parameters" />
+      <module name="word-util" options="-parameters" />
       <module name="yyy" options="-parameters" />
     </option>
   </component>

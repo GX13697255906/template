@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/springsecurity/pom.xml" />
         <option value="$PROJECT_DIR$/multiple-datasource/pom.xml" />
         <option value="$PROJECT_DIR$/redis/pom.xml" />
+        <option value="$PROJECT_DIR$/juc/pom.xml" />
       </list>
     </option>
   </component>
