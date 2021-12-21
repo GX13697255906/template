@@ -1,5 +1,7 @@
 package com.gx.websocket.common.constants;
 
+import org.springframework.amqp.core.ExchangeTypes;
+
 import java.io.Serializable;
 
 /**
@@ -9,12 +11,19 @@ public enum RabbitDetailsEnum implements Serializable {
 
 //    private final static String FX_EXCHANGE = "fx_exchange";
 
-    DIRECT_LOG("fx", "fx_routingKey_direct", "fx_exchange_direct", "direct", "fx_queue_log", "直连型-日志传输队列"),
-    FANOUT_LOG("fx", "fx_routingKey_fanout", "fx_exchange_fanout", "fanout", "fx_queue_log", "扇型-日志传输队列"),
-    TOPIC_LOG("fx", "fx_routingKey_topic", "fx_exchange_topic", "topic", "fx_queue_log", "主题型-日志传输队列"),
-    HEADERS_LOG("fx", "fx_routingKey_headers", "fx_exchange_headers", "headers", "fx_queue_log", "headers型-日志传输队列"),
+    API("fx", "fx_routingKey_direct", "fx_exchange", ExchangeTypes.DIRECT, "fx_queue_api", "API传输队列"),
 
-    API("fx", "fx_routingKey_direct", "fx_exchange", "direct", "fx_queue_api", "API传输队列");
+    DIRECT_LOG("fx", "fx_routingKey_direct", "fx_exchange_direct", ExchangeTypes.DIRECT, "fx_queue_log", "直连型-日志传输队列"),
+
+    FANOUT_API_0("fx", "", "fx_exchange_fanout", ExchangeTypes.FANOUT, "fx_queue_api_0", "扇型-日志传输队列"),
+    FANOUT_API_1("fx", "", "fx_exchange_fanout", ExchangeTypes.FANOUT, "fx_queue_api_1", "扇型-日志传输队列"),
+    FANOUT_API_2("fx", "", "fx_exchange_fanout", ExchangeTypes.FANOUT, "fx_queue_api_2", "扇型-日志传输队列"),
+
+    TOPIC_LOG_0("fx", "fx_routingKey_topic", "fx_exchange_topic", ExchangeTypes.TOPIC, "fx_queue_log", "主题型-日志传输队列"),
+    TOPIC_LOG_1("fx", "fx_routingKey_topic", "fx_exchange_topic", ExchangeTypes.TOPIC, "fx_queue_log", "主题型-日志传输队列"),
+    TOPIC_LOG_2("fx", "fx_routingKey_topic", "fx_exchange_topic", ExchangeTypes.TOPIC, "fx_queue_log", "主题型-日志传输队列"),
+
+    HEADERS_LOG("fx", "fx_routingKey_headers", "fx_exchange_headers", ExchangeTypes.HEADERS, "fx_queue_log", "headers型-日志传输队列");
 
     private String virtualHost;
     private String routingKey;

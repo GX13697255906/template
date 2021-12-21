@@ -8,15 +8,17 @@ import java.io.IOException;
 /**
  * @author Administrator
  */
-public class RabbitConsumer {
+public class RabbitConsumer3 {
 
     public static void main(String[] args) {
-        RabbitConsumer consumer = new RabbitConsumer();
-        consumer.directConsumer();
+        RabbitConsumer3 consumer = new RabbitConsumer3();
+//        consumer.directConsumer();
+        consumer.fanoutConsumer_2();
     }
 
+
     public void directConsumer() {
-        RabbitMQConfiguration configuration = new RabbitMQConfiguration();
+        RabbitMqConfiguration configuration = new RabbitMqConfiguration();
         Channel channel = configuration.channel;
         try {
 //            声明交换机
@@ -57,11 +59,46 @@ public class RabbitConsumer {
              */
 //            channel.basicConsume(RabbitDetailsEnum.DIRECT_LOG.getQueue(), true, consumer);
             channel.basicConsume(RabbitDetailsEnum.DIRECT_LOG.getQueue(), false, consumer);
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+    public void fanoutConsumer_2() {
+        RabbitMqConfiguration configuration = new RabbitMqConfiguration();
+        Channel channel = configuration.channel;
+        try {
+            String exchange = RabbitDetailsEnum.FANOUT_API_2.getExchange();
+            String exchangeType = RabbitDetailsEnum.FANOUT_API_2.getExchangeType();
+            String queue = RabbitDetailsEnum.FANOUT_API_2.getQueue();
+            String routingKey = RabbitDetailsEnum.FANOUT_API_2.getRoutingKey();
+            channel.exchangeDeclare(exchange, exchangeType, true, false, false, null);
+            channel.queueDeclare(queue, true, false, false, null);
+            //            绑定交换机
+            channel.queueBind(queue, exchange, routingKey);
+//            创建消费者
+            Consumer consumer = new DefaultConsumer(channel) {
+                @Override
+                public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
+                    String msg = new String(body, "UTF-8");
+                    System.out.println("消费端：" + msg);
+//                    58行  basicConcume  autoAck为false时,进行手动确认  保证队列到消费端的成功消费
+                    channel.basicAck(envelope.getDeliveryTag(), false);
+                }
+            };
+            /**
+             * 启动一个消费者，并返回服务端生成的消费者标识
+             * queue:队列名
+             * autoAck：true 接收到传递过来的消息后acknowledged（应答服务器），false 接收到消息后不应答服务器
+             * callback: 消费者对象的回调接口
+             * @return 服务端生成的消费者标识
+             */
+//            channel.basicConsume(queue, true, consumer);
+            channel.basicConsume(queue, false, consumer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }

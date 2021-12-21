@@ -11,7 +11,7 @@ import java.util.concurrent.TimeoutException;
 /**
  * @author Administrator
  */
-public class RabbitMQConfiguration {
+public class RabbitMqConfiguration {
 
     public static SortedSet<Long> confirmSet = Collections.synchronizedSortedSet(new TreeSet<Long>());
 
@@ -19,7 +19,7 @@ public class RabbitMQConfiguration {
     private Connection connection;
     public Channel channel;
 
-    public RabbitMQConfiguration() {
+    public RabbitMqConfiguration() {
         factory.setHost("172.16.0.118");
         factory.setPort(5672);
         factory.setVirtualHost("fx");
