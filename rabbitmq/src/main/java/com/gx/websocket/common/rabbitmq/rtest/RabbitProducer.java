@@ -92,7 +92,8 @@ public class RabbitProducer {
             String routingKey = RabbitDetailsEnum.TOPIC_LOG_0.getRoutingKey();
             String exchange = RabbitDetailsEnum.TOPIC_LOG_0.getExchange();
             for (int i = 0; i < 50; i++) {
-                channel.basicPublish(exchange, routingKey, mandatory, null, msg.getBytes());
+//                MessageProperties.PERSISTENT_TEXT_PLAIN  消息持久化
+                channel.basicPublish(exchange, routingKey, mandatory, MessageProperties.PERSISTENT_TEXT_PLAIN, msg.getBytes());
                 RabbitMqConfiguration.confirmSet.add(nextSeqNo);
                 if (channel.waitForConfirms()) {
                     System.out.println("confirm ： 消息投递成功");
